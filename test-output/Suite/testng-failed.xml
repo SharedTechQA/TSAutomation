@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="Glob.gsBrowser" value="Firefox"/>
+  <parameter name="Glob.gbMobile" value="false"/>
+  <parameter name="Glob.gsEnv" value="Prod"/>
+  <listeners>
+    <listener class-name="appModule.Listeners"/>
+  </listeners>
+  <test thread-count="3" name="prod ie Testing(failed)" parallel="classes">
+    <classes>
+      <class name="automationFramework.TSSearch">
+        <methods>
+          <include name="SearchFilterValues"/>
+          <include name="Search"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="SearchSpellCommunity"/>
+          <include name="SearchSpellSP"/>
+        </methods>
+      </class> <!-- automationFramework.TSSearch -->
+    </classes>
+  </test> <!-- prod ie Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

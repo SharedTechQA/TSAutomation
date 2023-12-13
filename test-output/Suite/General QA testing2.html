@@ -1,0 +1,397 @@
+<html>
+<head>
+<title>TestNG:  General QA testing2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>General QA testing2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 17 14:44:43 PDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>154 seconds (154525 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSCommunity.NewPost()'><b>NewPost</b><br>Test class: automationFramework.TSCommunity</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; div:nth-child(15) &gt; div &gt; ul &gt; li:nth-child(1) &gt; a&quot;}
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LT-MRADFORD2&apos;, ip: &apos;10.200.25.82&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\mradford\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3483}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: c4067b5c492275f2127fb61f839d31be
+*** Element info: {Using=css selector, value=body &gt; div:nth-child(15) &gt; div &gt; ul &gt; li:nth-child(1) &gt; a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.CommunityPage.liIntroduceYourSelf(CommunityPage.java:260)
+	at pageObjects.ForumPostPage.NewForumPost(ForumPostPage.java:74)
+	at automationFramework.TSCommunity.NewPost(TSCommunity.java:71)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527152775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527152775'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; div:nth-child(15) &gt; div &gt; ul &gt; li:nth-child(1) &gt; a&quot;}
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LT-MRADFORD2&apos;, ip: &apos;10.200.25.82&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\mradford\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3483}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: c4067b5c492275f2127fb61f839d31be
+*** Element info: {Using=css selector, value=body &gt; div:nth-child(15) &gt; div &gt; ul &gt; li:nth-child(1) &gt; a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.CommunityPage.liIntroduceYourSelf(CommunityPage.java:260)
+	at pageObjects.ForumPostPage.NewForumPost(ForumPostPage.java:74)
+	at automationFramework.TSCommunity.NewPost(TSCommunity.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>17</td>
+<td>automationFramework.TSCommunity@77cd7a0</td></tr>
+<tr>
+<td title='automationFramework.TSCommunity.NewPost()'><b>NewPost</b><br>Test class: automationFramework.TSCommunity</td>
+<td><div><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1863655430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1863655430'><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>33</td>
+<td>automationFramework.TSCommunity@77cd7a0</td></tr>
+<tr>
+<td title='automationFramework.TSFullCatalog.TS_VerifyCatalog()'><b>TS_VerifyCatalog</b><br>Test class: automationFramework.TSFullCatalog</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Format&quot;}
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LT-MRADFORD2&apos;, ip: &apos;10.200.25.82&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\mradford\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3595}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: 71870e480e4f83649f3a90f570cd38f8
+*** Element info: {Using=css selector, value=#Format}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.searchPage.lnkFormat(searchPage.java:79)
+	at automationFramework.TSFullCatalog.TS_VerifyCatalog(TSFullCatalog.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976827477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace976827477'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Format&quot;}
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LT-MRADFORD2&apos;, ip: &apos;10.200.25.82&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\mradford\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3595}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: 71870e480e4f83649f3a90f570cd38f8
+*** Element info: {Using=css selector, value=#Format}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.searchPage.lnkFormat(searchPage.java:79)
+	at automationFramework.TSFullCatalog.TS_VerifyCatalog(TSFullCatalog.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>15</td>
+<td>automationFramework.TSFullCatalog@4667ae56</td></tr>
+<tr>
+<td title='automationFramework.TSFullCatalog.TS_VerifyCatalog()'><b>TS_VerifyCatalog</b><br>Test class: automationFramework.TSFullCatalog</td>
+<td><div><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324112183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324112183'><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>15</td>
+<td>automationFramework.TSFullCatalog@4667ae56</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSRestrictionCheck.BasicRestrictionCheck()'><b>BasicRestrictionCheck</b><br>Test class: automationFramework.TSRestrictionCheck</td>
+<td></td>
+<td>60</td>
+<td>automationFramework.TSRestrictionCheck@e25b2fe</td></tr>
+<tr>
+<td title='automationFramework.TSCommunity.Community_PageChecks()'><b>Community_PageChecks</b><br>Test class: automationFramework.TSCommunity</td>
+<td></td>
+<td>19</td>
+<td>automationFramework.TSCommunity@77cd7a0</td></tr>
+<tr>
+<td title='automationFramework.TSEditOrg.EditOrg()'><b>EditOrg</b><br>Test class: automationFramework.TSEditOrg</td>
+<td></td>
+<td>77</td>
+<td>automationFramework.TSEditOrg@204f30ec</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.Join_TS()'><b>Join_TS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>10</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinErrorMessages()'><b>VerifyJoinErrorMessages</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinTS()'><b>VerifyJoinTS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: Hash #, XLOW3RSx#</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: back slash /, XLOW3RSx/</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: ampersand &, XLOW3RSx&</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: less than <, XLOW3RSx<</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: greater than >, XLOW3RSx3></td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: All disallowed chars, XLOW3RSx3<>/&#</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: no lower case, XLOW3RSE</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Carat ^, XLOW3RSx^</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Exclamation point, !, XLOW3RSx!</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: At sign @, XLOW3RSx@</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dollar $, XLOW3RSx$</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Percent %, XLOW3RSx3%</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Open Paren (, XLOW3RSx3(</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Close Paren ), XLOW3RSx3)</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dash/hyphen -, XLOW3RSx3-</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Under_Score _ , XLOW3RSx3_</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@754ba872</td></tr>
+</table><p>
+</body>
+</html>
