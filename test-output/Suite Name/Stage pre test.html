@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  Stage pre test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Stage pre test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 26 15:34:54 PDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3586 seconds (3586476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSCheckout.BasicCheckout()'><b>BasicCheckout</b><br>Test class: automationFramework.TSCheckout</td>
+<td></td>
+<td>163</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CCCheckout()'><b>CCCheckout</b><br>Test class: automationFramework.TSCheckout</td>
+<td></td>
+<td>278</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutUpdatePayment()'><b>CheckoutUpdatePayment</b><br>Test class: automationFramework.TSCheckout<br>Parameters: 1301623, Electronic Check</td>
+<td></td>
+<td>103</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutUpdatePayment()'><b>CheckoutUpdatePayment</b><br>Test class: automationFramework.TSCheckout<br>Parameters: 1309100, Visa ending in 1111</td>
+<td></td>
+<td>183</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutUpdatePayment()'><b>CheckoutUpdatePayment</b><br>Test class: automationFramework.TSCheckout<br>Parameters: 1309099, Pending Payment</td>
+<td></td>
+<td>103</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutVerifyDiscounted()'><b>CheckoutVerifyDiscounted</b><br>Test class: automationFramework.TSCheckout</td>
+<td></td>
+<td>204</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutVerifyShipping()'><b>CheckoutVerifyShipping</b><br>Test class: automationFramework.TSCheckout</td>
+<td></td>
+<td>571</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.CheckoutandVerify()'><b>CheckoutandVerify</b><br>Test class: automationFramework.TSCheckout</td>
+<td></td>
+<td>129</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000000, 011000015, true, false, </td>
+<td></td>
+<td>152</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000000, 011000015, false, true, </td>
+<td></td>
+<td>161</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000000, 011000015, true, false, </td>
+<td></td>
+<td>146</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000000, 011000015, false, false, 10PerOff</td>
+<td></td>
+<td>170</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/filemaker-17-platform--1-year-subscription-for-5-users--G-50737--, 1, false, false, $20.00, 1000000000, 011000015, false, false, </td>
+<td></td>
+<td>291</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACH()'><b>testACH</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000001, 011000015, false, false, </td>
+<td></td>
+<td>196</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000002, 011000015, true, false, </td>
+<td></td>
+<td>102</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000004, 011000015, false, true, </td>
+<td></td>
+<td>114</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000005, 011000015, true, false, </td>
+<td></td>
+<td>115</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000006, 011000015, false, false, 10PerOff</td>
+<td></td>
+<td>138</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1234567896, 011000015, false, false, 10PerOff</td>
+<td></td>
+<td>128</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+<tr>
+<td title='automationFramework.TSCheckout.testACHFailure()'><b>testACHFailure</b><br>Test class: automationFramework.TSCheckout<br>Parameters: https://www-stage.techsoup.org/products/quickbooks-made-easy-for-nonprofits-%E2%80%93-the-essentials-(discounted)--G-47288--, 1, false, false, $20.00, 1000000002, 011000999, true, false, </td>
+<td></td>
+<td>115</td>
+<td>automationFramework.TSCheckout@23e028a9</td></tr>
+</table><p>
+</body>
+</html>

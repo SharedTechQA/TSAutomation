@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite Name]">
+  <parameter name="Glob.gsBrowser" value="Chrome"/>
+  <parameter name="Glob.gbMobile" value="false"/>
+  <parameter name="Glob.gsEnv" value="QA"/>
+  <listeners>
+    <listener class-name="appModule.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="QA Timers(failed)">
+    <classes>
+      <class name="automationFramework.TSTimers">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="VerifyAddToCartOnScroll"/>
+          <include name="TenWorstPages"/>
+          <include name="VerifyLoginOnScroll"/>
+          <include name="Timers"/>
+          <include name="afterTest"/>
+          <include name="ATimersCaptcha"/>
+          <include name="TimersLoggedIn"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- automationFramework.TSTimers -->
+      <class name="automationFramework.TSJoin">
+        <methods>
+          <include name="Join_TS"/>
+          <include name="beforeClass"/>
+          <include name="VerifyJoinTS"/>
+          <include name="afterTest"/>
+          <include name="VerifyValidPW"/>
+          <include name="VerifyJoinNoErrorMessage"/>
+          <include name="afterClass"/>
+          <include name="VerifyPWMessages"/>
+          <include name="beforeTest"/>
+          <include name="VerifyJoinErrorMessages"/>
+        </methods>
+      </class> <!-- automationFramework.TSJoin -->
+    </classes>
+  </test> <!-- QA Timers(failed) -->
+</suite> <!-- Failed suite [Suite Name] -->
