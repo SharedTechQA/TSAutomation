@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+	<listeners>
+	<listener class-name="appModule.Listeners"/> 
+		</listeners>
+<parameter name="Glob.gsEnv" value="QA"/>
+<parameter name="Glob.gsBrowser" value ="Chrome"/>
+<parameter name="Glob.gbMobile" value ="false"/>
+  <test name="Org testing">
+    <classes>
+     
+    <class name="automationFramework.TSAddOrg"/>
+    </classes>
+  </test> <!-- Test -->  
+ 
+ 
+ 
+</suite> <!-- Suite -->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WHAT LOCATION" >
+	<listeners>
+	<listener class-name="appModule.Listeners"/> 
+		</listeners>
+<parameter name="Glob.gsEnv" value="Prod"/>
+<parameter name="Glob.gsBrowser" value ="Chrome"/>
+<parameter name="Glob.gbMobile" value ="false"/>
+  <test name="OS patching">
+
+ 	<classes> 
+        <class name="automationFramework.TSSearch"/>
+    </classes>     
+  </test>
+     
+  <test name = "Join">
+     
+    <classes>
+      <class name="automationFramework.TSJoin"/>
+    </classes>
+  </test>  
+  
+  <test name = "Full Catalog">
+     
+    <classes>
+      <class name="automationFramework.TSFullCatalog"/>
+    </classes>
+  </test> 
+  
+ 
+  <test name = "Catalog">
+     
+    <classes>
+      <class name="automationFramework.TSCatalogTest"/>
+    </classes>
+  </test>  
+  
+  <test name = "Contact Us">
+     
+    <classes>
+      <class name="automationFramework.TSContactUs"/>
+    </classes>
+  </test> 
+  
+    <test name = "Search">
+     
+    <classes>
+      <class name="automationFramework.TSSearch"/>
+    </classes>
+  </test> 
+  
+  <test name = "Verify Pages">
+  	<classes>
+  	<class name="automationFramework.TSVerifyPages"/>
+  	</classes>
+ 
+  </test> <!-- Test --> 
+
+ 
+</suite> <!-- Suite -->

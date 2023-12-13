@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="3">
+	<listeners> 
+	<listener class-name="appModule.Listeners"/> 
+		</listeners>
+<parameter name="Glob.gsEnv" value="Stage"/>
+<parameter name="Glob.gsBrowser" value ="Chrome"/>
+<parameter name="Glob.gbMobile" value ="false"/>
+  <test name="General QA testing">
+    <classes>
+  
+      <class name="automationFramework.TSSearch"/>
+      <class name="automationFramework.TSMobileJoin"/>
+      <class name="automationFramework.TSCheckoutQuestionnaire"/>
+      <class name="automationFramework.TSGeneralHomePage"/>
+      <class name="automationFramework.TSAddOrg"/>
+      <class name="automationFramework.TSSaveForLater"/>
+      <class name="automationFramework.TSFullCatalog"/>
+      <class name="automationFramework.TSCheckoutgroup"/>
+      <class name="automationFramework.TSCommunity"/>
+      <class name="automationFramework.TSChangePassword"/>
+      <class name="automationFramework.TSEditOrg"/>
+      <class name="automationFramework.TSRestrictionCheck"/>
+      <class name="automationFramework.TSJoin"/>
+      <class name="automationFramework.TSArticle"/>
+      <class name="automationFramework.TSLogin"/>
+      <class name="automationFramework.TSCheckout"/>
+      <class name="automationFramework.TSCatalogTest"/>
+      <class name="automationFramework.TSProductDetailsTest"/>
+      <class name="automationFramework.TSVerifyPages"/>
+      <class name="automationFramework.TSEligibilityQuiz"/>
+      <class name="automationFramework.TSMyAccount"/>
+      <class name="automationFramework.TSBoostCheckOut"/>
+
+		
+    </classes>
+       
+  </test> <!-- Test -->  
+  
+ 
+</suite> <!-- Suite -->
