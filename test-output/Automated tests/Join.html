@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Join</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Join</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 09 20:24:15 PST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>273 seconds (273944 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar, B00ker99!, false, The email address or password you entered doesn't match our records. Please re-enter your information and try again.</td>
+<td></td>
+<td>11</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar.net, Somepassword, false, The email address or password you entered doesn't match our records. Please re-enter your information and try again.</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: , Somepassword, false, Please enter your email address.</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar.net, , false, Please enter your password.</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/office-standard-ls-48332-, ls-48332-</td>
+<td></td>
+<td>27</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/office-for-mac-ls-3013-, ls-3013-</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/lenovo-for-nonprofits-access-to-discounted-rates-g-50386-, g-50386-</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/adobe-creative-cloud-for-individuals-all-apps-plan-1-year-individual-membership-access-to-discounted-rates-g-49388-, g-49388-</td>
+<td></td>
+<td>8</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/quickbooks-online-plus-g-49616-, g-49616-</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/adobe-acrobat-pro-dc-1-year-individual-membership-access-to-discounted-rates-g-49935-, g-49935-</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/windows-operating-system-upgrade-ls-47919-, ls-47919-</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/amazon-web-services-credits-for-nonprofits-g-50197-, g-50197-</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/hpcom-for-nonprofits-access-to-discounted-rates-g-50903-, g-50903-</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TenWorstPages()'><b>TenWorstPages</b><br>Test class: automationFramework.TSTimers<br>Parameters: products/photoshop-elements-2021-and-premiere-elements-2021-bundle-g-45103-, g-45103-</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.Timers()'><b>Timers</b><br>Test class: automationFramework.TSTimers</td>
+<td></td>
+<td>61</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.TimersLoggedIn()'><b>TimersLoggedIn</b><br>Test class: automationFramework.TSTimers</td>
+<td></td>
+<td>78</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.VerifyAddToCartOnScroll()'><b>VerifyAddToCartOnScroll</b><br>Test class: automationFramework.TSTimers</td>
+<td></td>
+<td>34</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSTimers.VerifyLoginOnScroll()'><b>VerifyLoginOnScroll</b><br>Test class: automationFramework.TSTimers</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSTimers@5a8806ef</td></tr>
+</table><p>
+</body>
+</html>

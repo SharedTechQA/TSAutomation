@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Product Details</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Product Details</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 09 15:09:49 PST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69754 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar, B00ker99!, false, The email address or password you entered doesn't match our records. Please re-enter your information and try again.</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar.net, Somepassword, false, The email address or password you entered doesn't match our records. Please re-enter your information and try again.</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: , Somepassword, false, Please enter your email address.</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSLogin.CheckLoginError()'><b>CheckLoginError</b><br>Test class: automationFramework.TSLogin<br>Parameters: matttest@foobar.net, , false, Please enter your password.</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSLogin@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.Join_TS()'><b>Join_TS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSFullCatalog.TS_VerifyCatalog()'><b>TS_VerifyCatalog</b><br>Test class: automationFramework.TSFullCatalog</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSFullCatalog@614ddd49</td></tr>
+<tr>
+<td title='automationFramework.TSProductDetailsTest.TestProductPageDetails()'><b>TestProductPageDetails</b><br>Test class: automationFramework.TSProductDetailsTest<br>Parameters: false, LOG IN</td>
+<td></td>
+<td>27</td>
+<td>automationFramework.TSProductDetailsTest@71bbf57e</td></tr>
+<tr>
+<td title='automationFramework.TSProductDetailsTest.TestProductPageDetails()'><b>TestProductPageDetails</b><br>Test class: automationFramework.TSProductDetailsTest<br>Parameters: true, ADD TO CART</td>
+<td></td>
+<td>22</td>
+<td>automationFramework.TSProductDetailsTest@71bbf57e</td></tr>
+<tr>
+<td title='automationFramework.TSProductDetailsTest.TestRelatedProducts()'><b>TestRelatedProducts</b><br>Test class: automationFramework.TSProductDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSProductDetailsTest@71bbf57e</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinErrorMessages()'><b>VerifyJoinErrorMessages</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinNoErrorMessage()'><b>VerifyJoinNoErrorMessage</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinTS()'><b>VerifyJoinTS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: Hash #, XLOW3RSx#</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: back slash /, XLOW3RSx/</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: ampersand &, XLOW3RSx&</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: less than <, XLOW3RSx<</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: greater than >, XLOW3RSx3></td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: All disallowed chars, XLOW3RSx3<>/&#</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: no lower case, XLOW3RSE</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Carat ^, XLOW3RSx^</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Exclamation point, !, XLOW3RSx!</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: At sign @, XLOW3RSx@</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dollar $, XLOW3RSx$</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Percent %, XLOW3RSx3%</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Open Paren (, XLOW3RSx3(</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Close Paren ), XLOW3RSx3)</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dash/hyphen -, XLOW3RSx3-</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Under_Score _ , XLOW3RSx3_</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@5a8806ef</td></tr>
+</table><p>
+</body>
+</html>

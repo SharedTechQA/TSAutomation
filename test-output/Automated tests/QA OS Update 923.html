@@ -1,0 +1,339 @@
+<html>
+<head>
+<title>TestNG:  QA OS Update 923</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>QA OS Update 923</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>52/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 27 16:20:06 PDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>136 seconds (136231 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/12/14/adobe-premiere-elements-15-vs-adobe-premiere-pro-cc.aspx</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2011/04/14/how-to-burn-downloaded-software-to-a-dvd.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/12/14/adobe-photoshop-elements-15-vs-adobe-photoshop-cc.aspxs</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/07/14/nonprofit-websites-5-ways-to-keep-them-fresh.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/08/14/ai-with-a-social-impact-the-top-5-reasons-why-nonprofits-should-explore-chatbots.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2009/01/21/thinking-about-a-new-phone-system.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/10/20/6-must-haves-for-your-nonprofit-website.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/05/18/hidden-gems-for-nonprofits-in-the-techsoup-catalog.aspx</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/01/13/top-10-technology-donations-for-religious-charities.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/07/19/an-offline-social-media-exercise-that-improves-online-content.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/09/30/microsoft-office-2016-is-now-available.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2014/12/08/10-best-practices-for-email-security.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2014/04/22/the-nine-steps-of-planning-a-successful-technology-project.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/03/23/techsoup-global-network-a-unique-force-for-social-change.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/01/29/can-i-use-that-image-for-my-website-or-newsletter.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/06/04/adobe-premiere-elements-13-vs-adobe-premiere-pro-cc.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/06/04/adobe-premiere-elements-13-vs-adobe-premiere-pro-cc.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/06/16/3-steps-to-building-your-communications-strategy-in-the-digital-era.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/09/07/grant-writing-and-the-perfect-storytelling.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/08/22/artificial-intelligence-in-nonprofit-tech.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/10/13/how-to-get-adobe-acrobat-pro-dc-through-techsoup.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/07/25/9-tips-to-maximize-your-fundraising-with-social-media.aspx</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/02/03/top-10-sources-for-free-images.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/06/27/storymakers-2016-winners.aspx</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/09/12/6-tips-to-improve-your-next-fundraising-campaign-using-digital-storytelling.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/07/07/5-uses-adobe-acrobat-pro-dc.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/01/21/adobe-photoshop-elements-14-vs-adobe-photoshop-cc.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/06/20/how-to-improve-your-donation-page.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/11/08/what-you-need-to-know-about-windows-10-in-2016.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/08/17/whats-new-in-adobe-acrobat-pro-2017.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/02/20/church-and-religious-organization-frequently-asked-questions.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/10/20/3-cool-things-to-try-in-excel-2016.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/06/13/how-nonprofits-can-improve-their-email-deliverability.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/08/10/how-nonprofits-are-successfully-using-chatbots.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/04/06/5-ways-nonprofits-can-use-sms.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/07/11/record-highs-for-gifts-to-nonprofits.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/11/06/3-onenote-2016-tips-to-keep-you-organized.aspx</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/09/20/blackbauds-raisers-edge-nxt-launches.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/04/18/how-techsoup-helped-to-build-the-refurbishment-industry.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/10/18/you-can-tech-plan-new-online-training-shows-you-how.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/05/16/what-you-can-do-about-ransomware.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/02/15/building-a-monthly-giving-program-with-your-supporters.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/08/04/6-device-security-tips-to-keep-your-data-safe.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2016/11/15/10-tips-to-improve-your-giving-tuesday-and-year-end-donation-pages.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/03/17/techsoup-tools-for-desktop-publishing-and-presentations.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/04/13/what-the-new-isp-law-means-for-your-internet-privacy-and-how-to-protect-yourself.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2014/09/22/new-infographic-shoot-video-like-a-pro.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2015/05/13/4-things-non-designers-should-know-about-graphic-design.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/02/13/techsoup-boost-an-easy-way-to-boost-your-techsoup-love.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2014/12/10/7-easy-ideas-to-give-your-next-presentation-oomph.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2014/02/18/charity-cell-phone-donation-programs.aspx</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBlogPages()'><b>checkBlogPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: /cs/community/b/tsblog/archive/2017/01/18/how-to-up-your-digital-marketing-and-fundraising-game-in-2017.aspx</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@5bc79255</td></tr>
+</table><p>
+</body>
+</html>

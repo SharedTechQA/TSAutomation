@@ -1,0 +1,534 @@
+<html>
+<head>
+<title>TestNG:  PT 1500</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PT 1500</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>91/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 05 07:37:35 PDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>415 seconds (415009 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: veritas</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Amazon</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: autodesk</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cisco</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobat</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: office</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: dharma</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrome</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Avast Business</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: zoom</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: intuit</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: docusign</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: sql server</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: tableau</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Google for Nonprofits</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloudflare</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.Search()'><b>Search</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>12</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchAndSort()'><b>SearchAndSort</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>18</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe-premiere-elements-15-vs-adobe-premiere-pro-cc</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: how-to-burn-downloaded-software-to-a-dvd</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe-photoshop-elements-15-vs-adobe-photoshop-cc</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: nonprofit-websites-5-ways-to-keep-them-fresh</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: what-chatbots-can-do-for-nonprofits-top-5-things</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: thinking-about-a-new-phone-system</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 6-must-haves-for-your-nonprofit-website</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: hidden-gems-for-nonprofits-in-the-techsoup-catalog</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: top-10-technology-donations-for-religious-charities</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: offline-social-media-exercise-that-improves-online-content</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft-office-2016-is-now-available</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 10-best-practices-for-email-security</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 9-steps-of-planning-a-successful-technology-project</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: techsoup-global-network-a-unique-force-for-social-change</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: can-i-use-that-image-for-my-website-or-newsletter</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe-premiere-elements-13-vs-adobe-premiere-pro-cc</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: intro-to-adobe-photoshop-for-nonprofits-part-1</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 3-steps-to-building-your-communications-strategy-in-the-digital-era</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: grant-writing-and-the-perfect-storytelling</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: artificial-intelligence-in-nonprofit-tech</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: how-to-get-adobe-acrobat-pro-dc-through-techsoup</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 9-tips-to-maximize-your-fundraising-with-social-media</td>
+<td></td>
+<td>10</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: top-10-sources-for-free-images</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: storymakers-2016-winners</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 6-tips-to-improve-your-next-fundraising-campaign-using-digital-storytelling</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 5-Uses-You-Didn't-Think-Of-for-Adobe-Acrobat-Pro-DC</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe-photoshop-elements-14-vs-adobe-photoshop-cc</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 10-ways-to-improve-your-donation-page-and-raise-more-money</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: what-you-need-to-know-about-windows-10</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: whats-new-in-adobe-acrobat-pro-2017</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: church-and-religious-organization-frequently-asked-questions</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 3-cool-things-to-try-in-excel-2016</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: how-nonprofits-can-improve-their-email-deliverability</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: cases-of-successful-nonprofits-that-use-chatbots</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 5-ways-nonprofits-can-use-text-messages</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: record-highs-for-gifts-to-nonprofits</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 3-onenote-2016-tips-to-keep-you-organized</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: Blackbaud's-Raiser's-Edge-NXT-Launches</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: biggest-technology-program-youve-never-heard-of</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: you-can-tech-plan-new-online-training-shows-you-how</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: what-you-can-do-about-ransomware</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: building-a-monthly-giving-program-with-your-supporters</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 6-device-security-tips-to-keep-your-data-safe</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 10-tips-to-improve-your-giving-tuesday-and-year-end-donation-pages</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: techsoup-tools-for-desktop-publishing-and-presentations</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: how-to-protect-yourself-from-the-new-isp-law</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: new-infographic-shoot-video-like-a-pro</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 4-things-non-designers-should-know-about-graphic-design</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: techsoup-boost-for-nonprofits-an-easy-way-to-boost-your-techsoup-love</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: 7-easy-ideas-to-give-your-next-presentation-oomph</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: why-are-charity-mobile-phone-donation-programs-going-extinct</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchBlog()'><b>SearchBlog</b><br>Test class: automationFramework.TSSearch<br>Parameters: how-to-up-your-digital-marketing-and-fundraising-game-in-2017</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchFilterValues()'><b>SearchFilterValues</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>24</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: vritas, 2, veritas, vritas</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: AmZon, 6, amazon, AmZon</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: maZon, 6, amazon, maZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: adoble, 6, adobe, adoble</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: daobe, 6, adobe, daobe</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobt, 4, acrobat, acrobt</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: offic3, 147, office, offic3</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: dhrma, 1, dharma, dhrma</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cr0me, 6, chrome, cr0me</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrme, 6, chrome, chrme</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zo0m, 11, zoom, zo0m</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zmoo, 0, zmodo, zmoo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: wewok, 0, wework, wewok</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: sq server, 33, sql server, sq server</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft, 184, null, null</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Microsoft Office 2010: How to Use Sparklines in Excel 2010, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Nortonlifelock, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloud fare, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+</table><p>
+</body>
+</html>
