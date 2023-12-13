@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WHAT LOCATION]">
+  <parameter name="Glob.gsBrowser" value="Chrome"/>
+  <parameter name="Glob.gbMobile" value="false"/>
+  <parameter name="Glob.gsEnv" value="QA "/>
+  <listeners>
+    <listener class-name="appModule.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="OS patching(failed)">
+    <classes>
+      <class name="automationFramework.TSCheckout">
+        <methods>
+          <include name="BasicCheckout"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="CCCheckout"/>
+          <include name="testACHFailure"/>
+          <include name="CheckoutandVerify"/>
+          <include name="testACH"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- automationFramework.TSCheckout -->
+    </classes>
+  </test> <!-- OS patching(failed) -->
+  <test thread-count="5" name="Join(failed)">
+    <classes>
+      <class name="automationFramework.TSJoin">
+        <methods>
+          <include name="Join_TS"/>
+          <include name="beforeClass"/>
+          <include name="VerifyJoinTS"/>
+          <include name="afterTest"/>
+          <include name="VerifyValidPW"/>
+          <include name="VerifyJoinNoErrorMessage"/>
+          <include name="afterClass"/>
+          <include name="VerifyPWMessages"/>
+          <include name="beforeTest"/>
+          <include name="VerifyJoinErrorMessages"/>
+        </methods>
+      </class> <!-- automationFramework.TSJoin -->
+    </classes>
+  </test> <!-- Join(failed) -->
+  <test thread-count="5" name="Full Catalog(failed)">
+    <classes>
+      <class name="automationFramework.TSFullCatalog">
+        <methods>
+          <include name="TS_VerifyCatalog"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- automationFramework.TSFullCatalog -->
+    </classes>
+  </test> <!-- Full Catalog(failed) -->
+  <test thread-count="5" name="Catalog(failed)">
+    <classes>
+      <class name="automationFramework.TSCatalogTest">
+        <methods>
+          <include name="CatalogTest"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- automationFramework.TSCatalogTest -->
+    </classes>
+  </test> <!-- Catalog(failed) -->
+  <test thread-count="5" name="Contact Us(failed)">
+    <classes>
+      <class name="automationFramework.TSContactUs">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="ContactUs"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- automationFramework.TSContactUs -->
+    </classes>
+  </test> <!-- Contact Us(failed) -->
+  <test thread-count="5" name="Search(failed)">
+    <classes>
+      <class name="automationFramework.TSSearch">
+        <methods>
+          <include name="SearchFilterValues"/>
+          <include name="AmpSearchForums"/>
+          <include name="beforeTest"/>
+          <include name="SearchAndSort"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="SearchSpellSP"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- automationFramework.TSSearch -->
+    </classes>
+  </test> <!-- Search(failed) -->
+  <test thread-count="5" name="Verify Pages(failed)">
+    <classes>
+      <class name="automationFramework.TSVerifyPages">
+        <methods>
+          <include name="checkDonorPages"/>
+          <include name="checkBoostPages"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="checkDiscontinuedEPDP"/>
+          <include name="checkURLRedriect"/>
+          <include name="checkCategoryPages"/>
+        </methods>
+      </class> <!-- automationFramework.TSVerifyPages -->
+    </classes>
+  </test> <!-- Verify Pages(failed) -->
+</suite> <!-- Failed suite [WHAT LOCATION] -->

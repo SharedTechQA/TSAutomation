@@ -1,0 +1,1297 @@
+<html>
+<head>
+<title>TestNG:  Verify Pages</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Verify Pages</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>124/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 25 19:45:23 PDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>385 seconds (385582 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/--g-40882--, products/slug-test-g-40882-</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.techsoup.org/products/slug-test-g-40882-] but found [https://www.techsoup.org/training-and-education]
+	at automationFramework.TSVerifyPages.checkURLRedriect(TSVerifyPages.java:182)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace856000892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace856000892'><pre>java.lang.AssertionError: expected [https://www.techsoup.org/products/slug-test-g-40882-] but found [https://www.techsoup.org/training-and-education]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at automationFramework.TSVerifyPages.checkURLRedriect(TSVerifyPages.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages</td>
+<td><div><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace687842599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace687842599'><pre>java.lang.NullPointerException
+	at appModule.Listeners.onTestFailure(Listeners.java:51)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:638)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: veritas</td>
+<td></td>
+<td>21</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Amazon</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: autodesk</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cisco</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobat</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: office</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: dharma</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrome</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Avast Business</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: zoom</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: intuit</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: docusign</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: sql server</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: tableau</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Google for Nonprofits</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloudflare</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: veritas</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Amazon</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: autodesk</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cisco</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobat</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: office</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: dharma</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrome</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Avast Business</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: zoom</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: intuit</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: docusign</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: sql server</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: tableau</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Google for Nonprofits</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloudflare</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSCatalogTest.CatalogTest()'><b>CatalogTest</b><br>Test class: automationFramework.TSCatalogTest</td>
+<td></td>
+<td>11</td>
+<td>automationFramework.TSCatalogTest@7f13d6e</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Association Code and Authorized Agents, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, Rudy, a message to you Rudy, should pass</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Association Code and Authorized Agents, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, , should fail, no message</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Microsoft Changes, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, message, should pass</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Microsoft Expired Link Help, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, , should fail, no message</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.Join_TS()'><b>Join_TS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>9</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchAndSort()'><b>SearchAndSort</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>15</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchAndSort()'><b>SearchAndSort</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>16</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchFilterValues()'><b>SearchFilterValues</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>17</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchFilterValues()'><b>SearchFilterValues</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>12</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: vritas, 2, veritas, vritas</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: AmZon, 6, amazon, AmZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: maZon, 6, amazon, maZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: adoble, 6, adobe, adoble</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: daobe, 6, adobe, daobe</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobt, 4, acrobat, acrobt</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: offic3, 147, office, offic3</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: dhrma, 1, dharma, dhrma</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cr0me, 6, chrome, cr0me</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrme, 6, chrome, chrme</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zo0m, 11, zoom, zo0m</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zmoo, 0, zmodo, zmoo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: wewok, 0, wework, wewok</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: sq server, 33, sql server, sq server</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft, 184, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Microsoft Office 2010: How to Use Sparklines in Excel 2010, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Nortonlifelock, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloud fare, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: vritas, 2, veritas, vritas</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: AmZon, 6, amazon, AmZon</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: maZon, 6, amazon, maZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: adoble, 6, adobe, adoble</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: daobe, 6, adobe, daobe</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobt, 4, acrobat, acrobt</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: offic3, 147, office, offic3</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: dhrma, 1, dharma, dhrma</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cr0me, 6, chrome, cr0me</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrme, 6, chrome, chrme</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zo0m, 11, zoom, zo0m</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zmoo, 0, zmodo, zmoo</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: wewok, 0, wework, wewok</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: sq server, 33, sql server, sq server</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft, 184, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Microsoft Office 2010: How to Use Sparklines in Excel 2010, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Nortonlifelock, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloud fare, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSFullCatalog.TS_VerifyCatalog()'><b>TS_VerifyCatalog</b><br>Test class: automationFramework.TSFullCatalog</td>
+<td></td>
+<td>9</td>
+<td>automationFramework.TSFullCatalog@1f554b06</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinErrorMessages()'><b>VerifyJoinErrorMessages</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinNoErrorMessage()'><b>VerifyJoinNoErrorMessage</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinTS()'><b>VerifyJoinTS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: Hash #, XLOW3RSx#</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: back slash /, XLOW3RSx/</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: ampersand &, XLOW3RSx&</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: less than <, XLOW3RSx<</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: greater than >, XLOW3RSx3></td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: All disallowed chars, XLOW3RSx3<>/&#</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: no lower case, XLOW3RSE</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Carat ^, XLOW3RSx^</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Exclamation point, !, XLOW3RSx!</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: At sign @, XLOW3RSx@</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dollar $, XLOW3RSx$</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Percent %, XLOW3RSx3%</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Open Paren (, XLOW3RSx3(</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Close Paren ), XLOW3RSx3)</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dash/hyphen -, XLOW3RSx3-</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Under_Score _ , XLOW3RSx3_</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/sap-litmos-learning-management-system-–-access-to-discounted-rates--G-49225--, Online</td>
+<td></td>
+<td>15</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/hotspot-for-mobile-beacon-4g-lte-internet-service-for-nonprofits--G-51472--, Hardware</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/mimo-7-inch-touch-display--HW-51468--, Hardware</td>
+<td></td>
+<td>6</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/hotspot-for-mobile-beacon-4g-lte-internet-service-for-nonprofits--G-51472--, Hardware</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/tableau-desktop-and-tableau-prep-builder--2-year-subscription--G-49474--, Download</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkBoostPages()'><b>checkBoostPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/docusign-standard-edition--G-49950--, Online</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: accounting</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: security</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: business-and-technology-planning</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: cloud-computing</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: communications</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: computers-and-electronics</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: databases-and-analytics</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: donor-and-grants-management</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: fundraising</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: green-technology</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: human-resources</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: it-services</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: libraries</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: mobile</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: operating-systems</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: phone-service</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: security</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: servers-and-networks</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: telecommuting</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: training-and-education</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: web-and-graphic-design</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkCategoryPages()'><b>checkCategoryPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: website-management</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDiscontinuedEPDP()'><b>checkDiscontinuedEPDP</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: techsoup-boost-catalog</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDiscontinuedEPDP()'><b>checkDiscontinuedEPDP</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: intuit-epdp</td>
+<td></td>
+<td>7</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: Adobe</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: ADP</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: airbnb-social-impact-experiences</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: alpha-software</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: amazon-web-services</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: arreva</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: asana</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: atlas-business-solutions</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: autodesk</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: avepoint</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: azavea</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: bitdefender</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: blackbaud</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: bloomerang</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: boost</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: box</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: bytes-of-learning</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: caravan-studios</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: cisco</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: cisco-meraki</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: citysoft</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: clicktime</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: comodo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: connect2give</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: dell</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: dharma-merchant-services</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: docusign</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: donorperfect</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: efficient-elements</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: filemaker</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: flixbus</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: goodwings</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: google-for-nonprofits</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: grantstation</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: headsets</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: horizon-datasys</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: hp-inc</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: hr-solutions-partners</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: infocus</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: intuit</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: journeyed</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: kintone</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: lenovo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: linksys</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: little-green-light</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: mailshell</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: microsoft-discount</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: microsoft-catalog</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: mileiq</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: mimo-monitors</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: mobile-beacon</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: nortonlifelock</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: notejoy</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: how-okta-helps-nonprofits</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: payanywhere</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: otter-ai</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: paya</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: payanywhere</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: people-onthego</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: pluralsight</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: priority</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: questionpro</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: quickbooks-made-easy</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: rain-design</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: reading-eggs</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: refurbished-computers-catalog</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: sap-litmos</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: shutterstock</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: skillsoft</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: snpo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: sparrow</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: symantec</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: tableau</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: tech-impact</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: techbridge</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: techsoup-services</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: ultralingua</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: usb-memory-direct</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: veritas</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: vmware</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: western-digital</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: wework</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: workplace-by-facebook</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: zoner</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: zoom</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: wix</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: pagerduty</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: sparkol</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkDonorPages()'><b>checkDonorPages</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: teamviewer</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/--g-45103--, products/photoshop-elements-2022-and-premiere-elements-2022-bundle-g-45103-</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/--g-49935--, products/adobe-acrobat-pro-dc-1-year-individual-membership-access-to-discounted-rates-g-49935-</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: microsoft?test=test, microsoft?test=test</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: microsoft/microsoft-cloud-subscriptions?test=test, microsoft/microsoft-cloud-subscriptions?test=test</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+<tr>
+<td title='automationFramework.TSVerifyPages.checkURLRedriect()'><b>checkURLRedriect</b><br>Test class: automationFramework.TSVerifyPages<br>Parameters: products/old-product-name-g-12345?utm_campaign=campaign_name, get-product-donations?utm_campaign=campaign_name</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSVerifyPages@3b088d51</td></tr>
+</table><p>
+</body>
+</html>

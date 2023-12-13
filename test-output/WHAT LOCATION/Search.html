@@ -1,0 +1,589 @@
+<html>
+<head>
+<title>TestNG:  Search</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Search</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 25 19:42:16 PDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>186 seconds (186982 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: veritas</td>
+<td></td>
+<td>21</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Amazon</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: autodesk</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cisco</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobat</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: office</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: dharma</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrome</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Avast Business</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: zoom</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: intuit</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: docusign</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: sql server</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: tableau</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Google for Nonprofits</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloudflare</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: veritas</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Amazon</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: autodesk</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: adobe</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cisco</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobat</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: office</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: dharma</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrome</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Avast Business</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: zoom</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: intuit</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: docusign</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: sql server</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: tableau</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: Google for Nonprofits</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.AmpSearchForums()'><b>AmpSearchForums</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloudflare</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSCatalogTest.CatalogTest()'><b>CatalogTest</b><br>Test class: automationFramework.TSCatalogTest</td>
+<td></td>
+<td>11</td>
+<td>automationFramework.TSCatalogTest@7f13d6e</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Association Code and Authorized Agents, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, Rudy, a message to you Rudy, should pass</td>
+<td></td>
+<td>5</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Association Code and Authorized Agents, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, , should fail, no message</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Microsoft Changes, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, message, should pass</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSContactUs.ContactUs()'><b>ContactUs</b><br>Test class: automationFramework.TSContactUs<br>Parameters: Microsoft Expired Link Help, FirstName, LastName, EMail Address, Organization, EIN, OrderNum, , should fail, no message</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSContactUs@48503868</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.Join_TS()'><b>Join_TS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>9</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchAndSort()'><b>SearchAndSort</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>15</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchAndSort()'><b>SearchAndSort</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>16</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchFilterValues()'><b>SearchFilterValues</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>17</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchFilterValues()'><b>SearchFilterValues</b><br>Test class: automationFramework.TSSearch</td>
+<td></td>
+<td>12</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: vritas, 2, veritas, vritas</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: AmZon, 6, amazon, AmZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: maZon, 6, amazon, maZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: adoble, 6, adobe, adoble</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: daobe, 6, adobe, daobe</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobt, 4, acrobat, acrobt</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: offic3, 147, office, offic3</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: dhrma, 1, dharma, dhrma</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cr0me, 6, chrome, cr0me</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrme, 6, chrome, chrme</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zo0m, 11, zoom, zo0m</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zmoo, 0, zmodo, zmoo</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: wewok, 0, wework, wewok</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: sq server, 33, sql server, sq server</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft, 184, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Microsoft Office 2010: How to Use Sparklines in Excel 2010, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Nortonlifelock, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloud fare, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@47ef968d</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: vritas, 2, veritas, vritas</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: AmZon, 6, amazon, AmZon</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: maZon, 6, amazon, maZon</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: adoble, 6, adobe, adoble</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: daobe, 6, adobe, daobe</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: acrobt, 4, acrobat, acrobt</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: offic3, 147, office, offic3</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: dhrma, 1, dharma, dhrma</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cr0me, 6, chrome, cr0me</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: chrme, 6, chrome, chrme</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zo0m, 11, zoom, zo0m</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: zmoo, 0, zmodo, zmoo</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: wewok, 0, wework, wewok</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: sq server, 33, sql server, sq server</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: microsoft, 184, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Microsoft Office 2010: How to Use Sparklines in Excel 2010, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: Nortonlifelock, 2, null, null</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSSearch.SearchSpellSP()'><b>SearchSpellSP</b><br>Test class: automationFramework.TSSearch<br>Parameters: cloud fare, 2, null, null</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSSearch@394e1a0f</td></tr>
+<tr>
+<td title='automationFramework.TSFullCatalog.TS_VerifyCatalog()'><b>TS_VerifyCatalog</b><br>Test class: automationFramework.TSFullCatalog</td>
+<td></td>
+<td>9</td>
+<td>automationFramework.TSFullCatalog@1f554b06</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinErrorMessages()'><b>VerifyJoinErrorMessages</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>3</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinNoErrorMessage()'><b>VerifyJoinNoErrorMessage</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyJoinTS()'><b>VerifyJoinTS</b><br>Test class: automationFramework.TSJoin</td>
+<td></td>
+<td>4</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: Hash #, XLOW3RSx#</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: back slash /, XLOW3RSx/</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: ampersand &, XLOW3RSx&</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: less than <, XLOW3RSx<</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: greater than >, XLOW3RSx3></td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: All disallowed chars, XLOW3RSx3<>/&#</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyPWMessages()'><b>VerifyPWMessages</b><br>Test class: automationFramework.TSJoin<br>Parameters: no lower case, XLOW3RSE</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Carat ^, XLOW3RSx^</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Exclamation point, !, XLOW3RSx!</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: At sign @, XLOW3RSx@</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dollar $, XLOW3RSx$</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Percent %, XLOW3RSx3%</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Open Paren (, XLOW3RSx3(</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Close Paren ), XLOW3RSx3)</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Dash/hyphen -, XLOW3RSx3-</td>
+<td></td>
+<td>2</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+<tr>
+<td title='automationFramework.TSJoin.VerifyValidPW()'><b>VerifyValidPW</b><br>Test class: automationFramework.TSJoin<br>Parameters: Under_Score _ , XLOW3RSx3_</td>
+<td></td>
+<td>1</td>
+<td>automationFramework.TSJoin@67205a84</td></tr>
+</table><p>
+</body>
+</html>
